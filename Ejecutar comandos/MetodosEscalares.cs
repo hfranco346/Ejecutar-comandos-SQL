@@ -35,15 +35,21 @@ namespace Ejecutar_comandos
             try
             {
                 // Establecer la conexión
+                conn.Open();
 
+                txtEscalar.AppendText("El número de productos es: ");
 
                 // Ejecutar el query Scalar con el método ExecuteScalar
-                txtEscalar.AppendText("");
+                txtEscalar.AppendText(cmd.ExecuteScalar().ToString());
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
-                
-                throw;
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+                txtEscalar.AppendText("\nConexión cerrada.");
             }
         }
     }

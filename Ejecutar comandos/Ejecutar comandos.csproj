@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +54,12 @@
     <Compile Include="CommandText.Designer.cs">
       <DependentUpon>CommandText.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExecuteReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExecuteReader.Designer.cs">
+      <DependentUpon>ExecuteReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="MetodosEscalares.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CommandText.resx">
       <DependentUpon>CommandText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecuteReader.resx">
+      <DependentUpon>ExecuteReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MetodosEscalares.resx">
       <DependentUpon>MetodosEscalares.cs</DependentUpon>
