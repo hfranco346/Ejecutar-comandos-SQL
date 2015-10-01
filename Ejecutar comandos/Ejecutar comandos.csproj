@@ -54,6 +54,12 @@
     <Compile Include="CommandText.Designer.cs">
       <DependentUpon>CommandText.cs</DependentUpon>
     </Compile>
+    <Compile Include="DML-Insertar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DML-Insertar.Designer.cs">
+      <DependentUpon>DML-Insertar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExecuteReader.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CommandText.resx">
       <DependentUpon>CommandText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DML-Insertar.resx">
+      <DependentUpon>DML-Insertar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExecuteReader.resx">
       <DependentUpon>ExecuteReader.cs</DependentUpon>

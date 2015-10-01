@@ -16,7 +16,7 @@ namespace Ejecutar_comandos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ExecuteReader());
+            Application.Run(new DML_Insertar());
         }
     }
 }
